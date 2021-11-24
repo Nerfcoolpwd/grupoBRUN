@@ -339,8 +339,8 @@
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
                 
-				<!-- <form id="contactForm" data-sb-form-api-token="API_TOKEN"> anterior-->
-				<form id="contactForm" method="post" action="sendbymail.php">
+				 <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="sendingbymail.php> 
+				<!--<form id="contactForm" method="post" action="sendingbymail.php">anterior-->
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -374,10 +374,13 @@
                     <!-- has successfully submitted-->
                     <div class="d-none" id="submitSuccessMessage">
                         <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
+							<?php
+								sendingbymail();
+							?>
+                            <!--<div class="fw-bolder">Form submission successful!</div>
                             To activate this form, sign up at
                             <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
                         </div>
                     </div>
 					
@@ -391,27 +394,7 @@
                     <!-- Submit Button-->
                     <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar Mensaje</button></div>
                 </form>
-				
-				<?php
-if(isset($_POST['email'])) {
 
-$email_to = "nerfcoolpwd@gmail.com";
-$email_subject = "Contacto desde el sitio web";
-
-$email_message = "Detalles del formulario de contacto:\n\n";
-
-$email_message .= "E-mail: " . $_POST['email'] . "\n";
-
-
-
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
-
-echo "¡El formulario se ha enviado con éxito!";
-}
-?>
 				
 				
             </div>
