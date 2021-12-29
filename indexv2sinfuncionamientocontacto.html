@@ -341,55 +341,55 @@
                 <!--
 				 <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="sendingbymail.php> 
 				<form id="contactForm" method="post" action="sendingbymail.php">-->
-
-   <link rel="stylesheet" href="pure-contactenos.css">
-
-  <!-- 
-  <form class="contactForm" method="POST" data-email="example@email.net"
-  action="https://script.google.com/macros/s/AKfycbyUSbRUtwC7msKwZteMYMB8yizkXKDyLP2zM6WTew/exec">-->
-<form class="gform pure-form pure-form-stacked" id="contactForm" method="POST" data-email="example@email.net"
-  action="https://script.google.com/macros/s/AKfycbyUSbRUtwC7msKwZteMYMB8yizkXKDyLP2zM6WTew/exec">
-  <div class="form-elements">
+				<form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <!-- Name input-->
-                                <input class="form-control" id="name" name="name"  placeholder="Nombre *" data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" placeholder="Nombre *" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Un nombre es requerido</div>
                             </div>
                             <div class="form-group">
                                 <!-- Email address input-->
-                                <input class="form-control" id="email" name="email" type="email" placeholder="Email *" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="email" placeholder="Email *" data-sb-validations="required,email" />
                                 <div class="invalid-feedback" data-sb-feedback="email:required">Un mail es requerido</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email invalido</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Teléfono *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Un numero de telefono es requerido</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
-                                <textarea class="form-control" id="message" name="message" placeholder="Mensaje *" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" placeholder="Mensaje *" data-sb-validations="required"></textarea>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Un mensaje es requerido</div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
                     <!-- Submit error message-->
                     <!---->
                     <!-- This is what your users will see when there is-->
                     <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar!</div></div>
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit">Enviar</button></div>
-				</div>
-					<!-- Customise the Thankyou Message People See when they submit the form: -->
-					<div class="thankyou_message" style="display:none;color:white;">
-					  <h2 color:white;><em>Gracias</em> por contactarnos!
-						Nos comunicaremos a la brevedad.</h2>
-					</div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
                 </form>
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript"
-  src="form-submission-handler.js"></script>
+
 				
 				
             </div>

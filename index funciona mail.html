@@ -331,66 +331,55 @@
                     <h2 class="section-heading text-uppercase">Contactanos</h2>
                     <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <!--
-				 <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="sendingbymail.php> 
-				<form id="contactForm" method="post" action="sendingbymail.php">-->
-
+<!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSca72Ha_a8C7Lg2ZNYJiSL_VJDpslqebhk9pnBo47jv92TzDw/viewform?embedded=true" width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>-->
+				
+<!-- Inicia codigo Contactenos-->
    <link rel="stylesheet" href="pure-contactenos.css">
+   <link rel="stylesheet" href="style-contactenos.css">
 
-  <!-- 
-  <form class="contactForm" method="POST" data-email="example@email.net"
-  action="https://script.google.com/macros/s/AKfycbyUSbRUtwC7msKwZteMYMB8yizkXKDyLP2zM6WTew/exec">-->
-<form class="gform pure-form pure-form-stacked" id="contactForm" method="POST" data-email="example@email.net"
+   
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
   action="https://script.google.com/macros/s/AKfycbyUSbRUtwC7msKwZteMYMB8yizkXKDyLP2zM6WTew/exec">
-  <div class="form-elements">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" name="name"  placeholder="Nombre *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Un nombre es requerido</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" name="email" type="email" placeholder="Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Un mail es requerido</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email invalido</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" name="message" placeholder="Mensaje *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Un mensaje es requerido</div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- change the form action to your script url -->
 
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit">Enviar</button></div>
-				</div>
-					<!-- Customise the Thankyou Message People See when they submit the form: -->
-					<div class="thankyou_message" style="display:none;color:white;">
-					  <h2 color:white;><em>Gracias</em> por contactarnos!
-						Nos comunicaremos a la brevedad.</h2>
-					</div>
-                </form>
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Nombre: </label>
+        <input id="name" name="name" placeholder="Su nombre" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Mensaje: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Cuentenos su consulta..."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>Su</em> email:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+        <span class="email-invalid" style="display:none">
+          Debe ingresar un email valido</span>
+      </fieldset>
+
+
+      <button >
+        Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;color:white;">
+      <h2 color:white;><em>Gracias</em> por contactarnos!
+        Nos comunicaremos a la brevedad.</h2>
+    </div>
+
+  </form>
+
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" type="text/javascript"
   src="form-submission-handler.js"></script>
-				
+<!-- END -->
+<!-- Termino codigo Contactenos-->
 				
             </div>
         </section>
