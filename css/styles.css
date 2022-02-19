@@ -41,7 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 0, 0, 150;/*aca cambia el color de los circulos de Servicios*/
+  --bs-primary-rgb: 43, 36, 117;/*aca cambia el color de los circulos de Servicios*/
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -3026,13 +3026,14 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0D7AB1;
-  border-color: #0D7AB1;
+  /*background-color: #0D7AB1;*/
+  background-color: #2b2475;/*Aca se cambia el color del boton Enviar*/
+  border-color: #2b2475;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #09567D;
-  border-color: #09567D;
+  background-color: #1788CB;
+  border-color: #1788CB;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -4058,10 +4059,12 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+    text-align: right; /*Aca ponemos el listado menu a la derecha*/
 }
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
+  /*background-color: grey; Aca cambiamos el fondo del listado de menu*/
 }
 .navbar-nav .dropdown-menu {
   position: static;
@@ -4082,7 +4085,7 @@ textarea.form-control-lg {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
+  background-color: #2b2475;/*Aca cambia color icono menu*/
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
@@ -4109,6 +4112,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+
 }
 
 .navbar-nav-scroll {
@@ -4183,6 +4187,7 @@ textarea.form-control-lg {
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+	
   }
   .navbar-expand-md .navbar-nav-scroll {
     overflow: visible;
@@ -11358,7 +11363,8 @@ p {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
   font-weight: bold;
-  color: #00467F; /*aca cambia el color del item del menu*/
+  color: #2b2475; /*aca cambia el color del item del menu*/
+  /*color: #00467F; */
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11455,7 +11461,7 @@ header.masthead .masthead-subheading {
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 3.25rem;
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11475,7 +11481,7 @@ header.masthead .masthead-heading {
   }
   header.masthead .masthead-heading {
     font-size: 4.5rem;
-    font-weight: 700;
+    font-weight: 300;
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
@@ -11623,7 +11629,8 @@ header.masthead .masthead-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #00467F;
+  /*background-color: #00467F;*/
+  background-color: #2b2475;
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
@@ -11675,7 +11682,7 @@ header.masthead .masthead-heading {
     float: left;
     width: 41%;
     padding: 0 20px 20px 30px;
-    text-align: right;
+    text-align: left;
   }
   .timeline > li .timeline-image {
     left: 50%;
